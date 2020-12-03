@@ -8,7 +8,15 @@
             "type": "java",
             "name": "CodeLens (Launch) - MerdekaDay",
             "request": "launch",
-            "vmArgs": "--module-path /Users/shahiraizwaniesinan/workspace/VScodeWorkspace/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "vmArgs": "--module-path C:/Users/A.Rozey/Downloads/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml --add-modules javafx.controls,javafx.media",
+            "mainClass": "xmastreeswing.MerdekaDay",
+            "projectName": "merdekaday-design-patterns_e3055435"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MerdekaDay",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/A.Rozey/Downloads/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml --add-modules javafx.controls,javafx.media",
             "mainClass": "xmastreeswing.MerdekaDay",
             "projectName": "DP-MerdekaDay_550f167b"
         },
@@ -17,6 +25,6 @@
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
-        },
+        }
     ]
 }

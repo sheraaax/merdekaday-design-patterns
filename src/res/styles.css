@@ -15,8 +15,10 @@
 
 #santa,
 #snow,
+#trishaw,
 #fireworks,
 #lights,
+#flag,
 #gifts {
     -fx-height: 44;
     -fx-padding: 0 22 0 22;
@@ -27,8 +29,10 @@
 
 #santa:pressed,
 #snow:pressed,
+#trishaw:pressed,
 #fireworks:pressed,
 #lights:pressed,
+#flag:pressed,
 #gifts:pressed {
     -fx-background-color: #24211E;
 }
