@@ -1,0 +1,34 @@
+#global {
+    -fx-background-image: url("merdeka_background.jpeg");
+    -fx-background-size: cover;
+}
+
+/* #land {
+    -fx-background-image: url("land.png");
+    -fx-background-size: cover;
+} */
+
+#panel {
+    -fx-height: 72;
+    -fx-background-color: #db4949;
+}
+
+#santa,
+#snow,
+#fireworks,
+#lights,
+#gifts {
+    -fx-height: 44;
+    -fx-padding: 0 22 0 22;
+    -fx-text-fill: #fdf25c;
+    -fx-background-color: #011792;
+    -fx-background-radius: 22;
+}
+
+#santa:pressed,
+#snow:pressed,
+#fireworks:pressed,
+#lights:pressed,
+#gifts:pressed {
+    -fx-background-color: #24211E;
+}
