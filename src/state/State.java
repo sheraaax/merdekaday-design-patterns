@@ -7,8 +7,9 @@ package state;
 
 /**
  *
- * @author Irsyad
+ * @author Amirah Rozey
  */
+
 public interface State {
     
     public void triggerSnow();

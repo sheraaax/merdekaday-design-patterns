@@ -9,8 +9,9 @@ import javafx.scene.image.ImageView;
 
 /**
  *
- * @author Irsyad
+ * @author Amirah Rozey
  */
+
 public class NoSnowFall implements State {
     
     ImageView snow_gif;

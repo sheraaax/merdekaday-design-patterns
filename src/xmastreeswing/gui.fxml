@@ -10,9 +10,9 @@
 
 <AnchorPane id="global" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="920.0" stylesheets="@../res/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xmastreeswing.Controller">
    <children>
-      <ImageView fx:id="snow_gif" fitHeight="528.0" fitWidth="920.0" layoutX="2.0" layoutY="6.0" pickOnBounds="true">
+      <ImageView fx:id="snow_gif" fitHeight="258.0" fitWidth="420.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true">
          <image>
-            <Image url="@../res/snow.gif" />
+            <Image url="@../res/flag.gif" />
          </image>
       </ImageView>
       <!-- <ImageView fitHeight="151.0" fitWidth="920.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
@@ -110,15 +110,5 @@
             <Image url="@../res/fireworks3.png" />
          </image>
       </ImageView>
-      <!-- <ImageView fx:id="orn1" fitHeight="33.0" fitWidth="29.0" layoutX="479.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../res/ornament4.png" />
-         </image>
-      </ImageView> -->
-      <!-- <ImageView fx:id="orn5" fitHeight="33.0" fitWidth="42.0" layoutX="447.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../res/bell.png" />
-         </image>
-      </ImageView> -->
    </children>
 </AnchorPane>
