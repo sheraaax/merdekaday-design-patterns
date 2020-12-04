@@ -12,12 +12,12 @@ import javafx.scene.image.ImageView;
  * @author Amirah Rozey
  */
 
-public class NoSnowFall implements State {
+public class NoFlag implements State {
     
     ImageView flag_gif;
     Flag flag;
     
-    public NoSnowFall(ImageView flag_gif, Flag flag){
+    public NoFlag(ImageView flag_gif, Flag flag){
         this.flag_gif = flag_gif;
         this.flag = flag;
     }
@@ -26,7 +26,7 @@ public class NoSnowFall implements State {
     public void triggerFlag() {
         System.out.println("Flag is taken down!");
         flag_gif.setVisible(false);
-        flag.changeState(flag.snowFall());
+        flag.changeState(flag.waveFlag());
     }
     
 }

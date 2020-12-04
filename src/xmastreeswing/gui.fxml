@@ -10,7 +10,7 @@
 
 <AnchorPane id="global" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="920.0" stylesheets="@../res/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xmastreeswing.Controller">
    <children>
-      <ImageView fx:id="flag_gif" fitHeight="258.0" fitWidth="420.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true">
+      <ImageView fx:id="flag_gif" fitHeight="268.0" fitWidth="330.0" layoutX="483.0" layoutY="38.0" pickOnBounds="true">
          <image>
             <Image url="@../res/flag.gif" />
          </image>
@@ -95,17 +95,17 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Text> -->
-      <ImageView fx:id="fireworks1" fitHeight="280.0" fitWidth="280.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fireworks1" fitHeight="250.0" fitWidth="250.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../res/fireworks1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fireworks2" fitHeight="230.0" fitWidth="200.0" layoutX="510.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fireworks2" fitHeight="180.0" fitWidth="110.0" layoutX="490.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../res/fireworks2.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fireworks3" fitHeight="320.0" fitWidth="270.0" layoutX="260.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fireworks3" fitHeight="320.0" fitWidth="270.0" layoutX="248.0" layoutY="4.3" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../res/fireworks3.png" />
          </image>

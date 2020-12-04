@@ -14,16 +14,16 @@ import javafx.scene.image.ImageView;
 
 public class Flag {
     
-    private State snowFall;
-    private State noSnowFall;
+    private State waveFlag;
+    private State noFlag;
     private State state;
     ImageView gif;
     
     public Flag(ImageView gif){
         this.gif = gif;
-        snowFall = new SnowFall(gif, this);
-        noSnowFall = new NoSnowFall(gif, this);
-        state = snowFall;
+        waveFlag = new WaveFlag(gif, this);
+        noFlag = new NoFlag(gif, this);
+        state = waveFlag;
     }
     
     public State getState(){
@@ -38,11 +38,11 @@ public class Flag {
         state.triggerFlag();
     }
     
-    public State snowFall(){
-        return snowFall;
+    public State waveFlag(){
+        return waveFlag;
     }
     
-    public State NoSnowFall(){
-        return noSnowFall;
+    public State NoFlag(){
+        return noFlag;
     }
 }
