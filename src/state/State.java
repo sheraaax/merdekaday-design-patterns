@@ -12,6 +12,6 @@ package state;
 
 public interface State {
     
-    public void triggerSnow();
+    public void triggerFlag();
     
 }

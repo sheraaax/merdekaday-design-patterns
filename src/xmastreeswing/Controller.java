@@ -33,10 +33,10 @@ import javafx.fxml.Initializable;
 public class Controller implements Initializable{
     
     GiftBoxInterface box = new GiftBox();
-    Snow salji;
+    Flag jalurgemilangFlag;
 
     @FXML
-    private Button santa, snow, fireworks, lights;
+    private Button santa, flag, fireworks, lights;
 
     @FXML
     private ImageView santaImage;
@@ -61,12 +61,12 @@ public class Controller implements Initializable{
     @FXML
     private Button clear;
     @FXML
-    private ImageView snow_gif;
+    private ImageView flag_gif;
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         hideFireworks();
-        hideSnow();
+        hideFlag();
     }
     
     @FXML
@@ -80,8 +80,8 @@ public class Controller implements Initializable{
                 break;
 
             // TODO: State Pattern
-            case "snow":
-                salji.triggerSnow();
+            case "flag":
+                jalurgemilangFlag.triggerFlag();
                 break;
 
             // TODO: Façade Pattern
@@ -162,9 +162,9 @@ public class Controller implements Initializable{
         // orn5.setVisible(false);
     }
     
-    private void hideSnow(){
-        snow_gif.setVisible(false);
-        salji = new Snow(snow_gif);
+    private void hideFlag(){
+        flag_gif.setVisible(false);
+        jalurgemilangFlag = new Flag(flag_gif);
     }
 
     

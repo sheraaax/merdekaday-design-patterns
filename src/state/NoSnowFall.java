@@ -14,19 +14,19 @@ import javafx.scene.image.ImageView;
 
 public class NoSnowFall implements State {
     
-    ImageView snow_gif;
-    Snow snow;
+    ImageView flag_gif;
+    Flag flag;
     
-    public NoSnowFall(ImageView snow_gif, Snow snow){
-        this.snow_gif = snow_gif;
-        this.snow = snow;
+    public NoSnowFall(ImageView flag_gif, Flag flag){
+        this.flag_gif = flag_gif;
+        this.flag = flag;
     }
 
     @Override
-    public void triggerSnow() {
-        System.out.println("Snow has stopped !");
-        snow_gif.setVisible(false);
-        snow.changeState(snow.snowFall());
+    public void triggerFlag() {
+        System.out.println("Flag is taken down!");
+        flag_gif.setVisible(false);
+        flag.changeState(flag.snowFall());
     }
     
 }

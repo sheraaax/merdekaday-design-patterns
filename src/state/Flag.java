@@ -12,14 +12,14 @@ import javafx.scene.image.ImageView;
  * @author Amirah Rozey
  */
 
-public class Snow {
+public class Flag {
     
     private State snowFall;
     private State noSnowFall;
     private State state;
     ImageView gif;
     
-    public Snow(ImageView gif){
+    public Flag(ImageView gif){
         this.gif = gif;
         snowFall = new SnowFall(gif, this);
         noSnowFall = new NoSnowFall(gif, this);
@@ -34,8 +34,8 @@ public class Snow {
         this.state = state;
     }
     
-    public void triggerSnow(){
-        state.triggerSnow();
+    public void triggerFlag(){
+        state.triggerFlag();
     }
     
     public State snowFall(){
