@@ -12,6 +12,6 @@ package state;
 
 public interface State {
     
-    public void triggerFlag();
+    public void performFlagAction();
     
 }

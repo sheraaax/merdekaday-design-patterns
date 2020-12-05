@@ -23,7 +23,7 @@ public class NoFlag implements State {
     }
 
     @Override
-    public void triggerFlag() {
+    public void performFlagAction() {
         System.out.println("Flag is taken down!");
         flag_gif.setVisible(false);
         flag.changeState(flag.waveFlag());

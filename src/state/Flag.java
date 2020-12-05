@@ -34,8 +34,8 @@ public class Flag {
         this.state = state;
     }
     
-    public void triggerFlag(){
-        state.triggerFlag();
+    public void performFlagAction(){
+        state.performFlagAction();
     }
     
     public State waveFlag(){
