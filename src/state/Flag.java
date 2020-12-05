@@ -22,7 +22,7 @@ public class Flag {
     public Flag(ImageView gif){
         this.gif = gif;
         waveFlag = new WaveFlag(gif, this);
-        noFlag = new NoFlag(gif, this);
+        noFlag = new NoFlag(gif,  this);
         state = waveFlag;
     }
     
@@ -42,7 +42,7 @@ public class Flag {
         return waveFlag;
     }
     
-    public State NoFlag(){
+    public State noFlag(){
         return noFlag;
     }
 }

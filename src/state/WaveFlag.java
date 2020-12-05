@@ -27,7 +27,7 @@ public class WaveFlag implements State{
     public void triggerFlag() {
         System.out.println("Flag is put up!");
         flag_gif.setVisible(true);
-        flag.changeState(flag.NoFlag());
+        flag.changeState(flag.noFlag());
     }
     
 }
