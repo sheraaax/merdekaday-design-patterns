@@ -9,7 +9,7 @@ import java.io.File;
 
 public class SantaAudio {
     private static Boolean loop = false;
-    private static final String path = "./src/res/santa_voice.mp3";
+    private static final String path = "./src/res/tanggal31.wav";
     private static final Media media = new Media(new File(path).toURI().toString());
     private static final MediaPlayer audio = new MediaPlayer(media);
 

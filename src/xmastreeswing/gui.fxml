@@ -25,9 +25,9 @@
             <Image url="@../res/xmastree.png" />
          </image>
       </ImageView> -->
-      <ImageView id="santaImage" fx:id="santaImage" fitHeight="216.0" fitWidth="155.0" layoutX="115.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView id="santaImage" fx:id="santaImage" fitHeight="216.0" fitWidth="155.0" layoutX="0.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
-            <Image url="@../res/santa.png" />
+            <Image url="@../res/malaysian.gif" />
          </image>
       </ImageView>
       <ImageView fx:id="bearImage" fitHeight="78.0" fitWidth="68.0" layoutX="758.0" layoutY="237.0" visible="false">
