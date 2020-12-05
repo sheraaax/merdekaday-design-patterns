@@ -1,13 +1,17 @@
 # MerdekaDay Design Pattern
 
+
 Decorations -
 ---------
 
-1. Tanggal 31 - Sudirman (audio)
+1. Tanggal 31 - Sudirman (music)
 2. Fireworks
 3. Hibiscus
-4. Lights (animation)
-5. Flag (animation)
+4. Trishaw
+5. KLCC
+6. KL Tower
+7. Lights (animation)
+8. Flag (animation)
 
 How To Install -
 ---------
