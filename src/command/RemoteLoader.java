@@ -6,7 +6,7 @@ public class RemoteLoader {
 
     public static void init(ImageView kidsGif) {
 
-        RemoteControl remote = new RemoteControl();
+        RemoteControl remoteCont = new RemoteControl();
         Kids kids = new Kids();
         KidsOnCommand kidsOn = new KidsOnCommand(kids);
         KidsOffCommand kidsOff = new KidsOffCommand(kids);
@@ -16,18 +16,8 @@ public class RemoteLoader {
         // else
         //     remote.setCommand(kidsOn);
 
-        remote.setCommand(kids.getStatus() ? kidsOff : kidsOn);
-        remote.buttonPressed(kidsGif);
+        remoteCont.setCommand(kids.getStatus() ? kidsOff : kidsOn);
+        remoteCont.buttonPressed(kidsGif);
     }
 
-
-    // public static void init(ImageView santaImage) {
-    //     RemoteControl remote = new RemoteControl();
-    //     Santa santa = new Santa();
-    //     SantaOnCommand santaOn = new SantaOnCommand(santa);
-    //     SantaOffCommand santaOff = new SantaOffCommand(santa);
-
-    //     remote.setCommand(santa.getStatus() ? santaOff : santaOn);
-    //     remote.buttonPressed(santaImage);
-    // }
 }

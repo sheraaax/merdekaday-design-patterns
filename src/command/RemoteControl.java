@@ -7,7 +7,7 @@ public class RemoteControl {
     Command slot;
 
     public RemoteControl() {
-        
+        // Empty method
     }
 
     public void setCommand(Command command) {

@@ -10,8 +10,9 @@ Decorations -
 4. Trishaw
 5. KLCC
 6. KL Tower
-7. Lights (animation)
-8. Flag (animation)
+7. Lights
+8. Malaysian people (.gif)
+9. Flag (.gif)
 
 How To Install -
 ---------

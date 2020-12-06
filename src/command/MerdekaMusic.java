@@ -14,7 +14,7 @@ public class MerdekaMusic {
     private static final MediaPlayer music = new MediaPlayer(media);
 
     public MerdekaMusic() {
-
+        // Empty method
     }
 
     public static void play() {

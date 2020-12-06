@@ -9,21 +9,20 @@ public class Kids {
 
     public void on() {
         status = true;
-        System.out.println("Kids are displayed !");
-
+        
         music.play();
     }
 
     public void off() {
         status = false;
-        System.out.println("Kids are hidden !");
 
         music.stop();
     }
 
     public void on(ImageView imageView) {
         status = true;
-        System.out.println("Kids are displayed !");
+        System.out.println("Play music!");
+        System.out.println("Kids are displayed!");
 
         imageView.setVisible(true);
         music.play();
@@ -31,7 +30,8 @@ public class Kids {
 
     public void off(ImageView imageView) {
         status = false;
-        System.out.println("Kids are hidden !");
+        System.out.println("Stop music!");
+        System.out.println("Kids are hidden!");
 
         imageView.setVisible(false);
         music.stop();
