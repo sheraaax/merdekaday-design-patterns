@@ -21,7 +21,7 @@ public class Kids {
 
     public void on(ImageView imageView) {
         status = true;
-        System.out.println("Play music!");
+        System.out.print("Play music! ");
         System.out.println("Kids are displayed!");
 
         imageView.setVisible(true);
@@ -30,7 +30,7 @@ public class Kids {
 
     public void off(ImageView imageView) {
         status = false;
-        System.out.println("Stop music!");
+        System.out.print("Stop music! ");
         System.out.println("Kids are hidden!");
 
         imageView.setVisible(false);
