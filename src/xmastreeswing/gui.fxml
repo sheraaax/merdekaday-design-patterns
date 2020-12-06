@@ -10,9 +10,9 @@
 
 <AnchorPane id="global" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="920.0" stylesheets="@../res/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xmastreeswing.Controller">
    <children>
-      <ImageView fx:id="snow_gif" fitHeight="528.0" fitWidth="920.0" layoutX="2.0" layoutY="6.0" pickOnBounds="true">
+      <ImageView fx:id="flag_gif" fitHeight="268.0" fitWidth="330.0" layoutX="483.0" layoutY="38.0" pickOnBounds="true">
          <image>
-            <Image url="@../res/snow.gif" />
+            <Image url="@../res/flag.gif" />
          </image>
       </ImageView>
       <!-- <ImageView fitHeight="151.0" fitWidth="920.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
@@ -25,9 +25,9 @@
             <Image url="@../res/xmastree.png" />
          </image>
       </ImageView> -->
-      <ImageView id="santaImage" fx:id="santaImage" fitHeight="216.0" fitWidth="155.0" layoutX="115.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView id="kidsGif" fx:id="kidsGif" fitHeight="330.0" fitWidth="300.0" layoutX="5.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
-            <Image url="@../res/santa.png" />
+            <Image url="@../res/malaysian.gif" />
          </image>
       </ImageView>
       <ImageView fx:id="bearImage" fitHeight="78.0" fitWidth="68.0" layoutX="758.0" layoutY="237.0" visible="false">
@@ -42,8 +42,8 @@
       </ImageView>
       <AnchorPane id="panel" layoutY="393.0" prefHeight="62.0" prefWidth="920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Button id="santa" fx:id="santa" layoutX="30.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Santa Claus" textFill="#fdf25c" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="9.0" />
-            <Button id="snow" fx:id="snow" layoutX="134.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Snow" textFill="#fdf25c" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="134.0" AnchorPane.topAnchor="9.0" />
+            <Button id="kids" fx:id="kids" layoutX="30.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Play Music" textFill="#fdf25c" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="9.0" />
+            <Button id="flag" fx:id="flag" layoutX="134.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Flag" textFill="#fdf25c" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="134.0" AnchorPane.topAnchor="9.0" />
             <Button id="fireworks" fx:id="fireworks" layoutX="219.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Fireworks" textFill="#fdf25c" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="219.0" AnchorPane.topAnchor="9.0" />
             <Button id="lights" fx:id="lights" layoutX="341.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Lights" textFill="#fdf25c" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="341.0" AnchorPane.topAnchor="9.0" />
             <Button id="gifts" fx:id="adder" layoutX="718.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="44.0" text="Add Gifts" textFill="#fdf25c" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="718.0" AnchorPane.topAnchor="9.0" />
@@ -95,30 +95,20 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Text> -->
-      <ImageView fx:id="fireworks1" fitHeight="280.0" fitWidth="280.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fireworks1" fitHeight="250.0" fitWidth="250.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../res/fireworks1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fireworks2" fitHeight="230.0" fitWidth="200.0" layoutX="510.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fireworks2" fitHeight="180.0" fitWidth="110.0" layoutX="490.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../res/fireworks2.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fireworks3" fitHeight="320.0" fitWidth="270.0" layoutX="260.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fireworks3" fitHeight="320.0" fitWidth="270.0" layoutX="248.0" layoutY="4.3" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../res/fireworks3.png" />
          </image>
       </ImageView>
-      <!-- <ImageView fx:id="orn1" fitHeight="33.0" fitWidth="29.0" layoutX="479.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../res/ornament4.png" />
-         </image>
-      </ImageView> -->
-      <!-- <ImageView fx:id="orn5" fitHeight="33.0" fitWidth="42.0" layoutX="447.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../res/bell.png" />
-         </image>
-      </ImageView> -->
    </children>
 </AnchorPane>

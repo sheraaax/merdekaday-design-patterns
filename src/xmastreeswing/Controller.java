@@ -8,38 +8,31 @@ import decorator.GiftBoxInterface;
 import decorator.Smartphone;
 import decorator.Toy;
 import decorator.tshirt;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.text.Text;
-import strategy.LightChristmas;
-import facade.Fireworks;
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.text.Text;
-import strategy.LightChristmas;
 import facade.Fireworks;
 import state.*;
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
+import strategy.LightChristmas;
+
 
 public class Controller implements Initializable{
     
     GiftBoxInterface box = new GiftBox();
-    Snow salji;
+    Flag jalurgemilangFlag;
 
     @FXML
-    private Button santa, snow, fireworks, lights;
+    private Button santa, flag, fireworks, lights;
 
     @FXML
-    private ImageView santaImage;
+    private ImageView kidsGif;
     
     @FXML
     private ImageView lightStar;
@@ -57,16 +50,17 @@ public class Controller implements Initializable{
     private Button adder;
     
     @FXML
+    private ImageView flag_gif;
+    @FXML
     private ImageView fireworks1, fireworks2, fireworks3, fireworks4, fireworks5;
     @FXML
     private Button clear;
-    @FXML
-    private ImageView snow_gif;
+    
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         hideFireworks();
-        hideSnow();
+        hideFlag();
     }
     
     @FXML
@@ -75,27 +69,28 @@ public class Controller implements Initializable{
         String id = temp.getId();
 
         switch ( id ){
-            case "santa":
-                RemoteLoader.init(santaImage);
+            // Command Pattern
+            case "kids":
+                RemoteLoader.init(kidsGif);
                 break;
 
-            // TODO: State Pattern
-            case "snow":
-                salji.triggerSnow();
+            // State Pattern
+            case "flag":
+                jalurgemilangFlag.performFlagAction();
                 break;
 
-            // TODO: Façade Pattern
+            // Façade Pattern
             case "fireworks":
                 Fireworks fireworks = new Fireworks(fireworks1, fireworks2, fireworks3);
                 fireworks.setFireworks();
                 break;
 
-            // TODO: Strategy Pattern
+            // Strategy Pattern
             case "lights":
                 LightChristmas.init(lightStar);
                 break;
 
-            // TODO: Decorator Pattern
+            // Decorator Pattern
             case "gifts":
                 AddGift.init(box,price,bearImage,tshirtImage,candyImage,smartphoneImage);
                 break;
@@ -162,9 +157,9 @@ public class Controller implements Initializable{
         // orn5.setVisible(false);
     }
     
-    private void hideSnow(){
-        snow_gif.setVisible(false);
-        salji = new Snow(snow_gif);
+    private void hideFlag(){
+        flag_gif.setVisible(false);
+        jalurgemilangFlag = new Flag(flag_gif);
     }
 
     
