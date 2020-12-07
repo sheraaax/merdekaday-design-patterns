@@ -21,9 +21,8 @@ import javafx.scene.text.Text;
  */
 public class AddGift  {
         
-    public static void init(GiftBoxInterface box, Text txt, ImageView img1, ImageView img2, ImageView img3, ImageView img4) {
+    public static void init(GiftBoxInterface box, ImageView img1, ImageView img2, ImageView img3, ImageView img4) {
         
-        txt.setText(String.valueOf(box.getCost()));
         if (img1.isVisible()) {
             img1.yProperty().set(95);
             img1.xProperty().set(-30);

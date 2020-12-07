@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,12 +12,11 @@ import javafx.scene.image.ImageView;
  *
  * @author alisu
  */
-public class tshirt extends Gifts{
+public class Hibiscus extends Gifts{
     
     GiftBoxInterface box;
-    ImageView img;
     
-     public tshirt(GiftBoxInterface newGiftBox) {
+    public Hibiscus(GiftBoxInterface newGiftBox) {
         super(newGiftBox);
         this.box = newGiftBox;
     }
@@ -24,14 +24,14 @@ public class tshirt extends Gifts{
     @Override
     public String getDescription(){
     
-        return tempGiftBox.getDescription() + ", T-shirt";
+        return tempGiftBox.getDescription() + ", Hibiscus";
         
     }
     
     @Override
     public double getCost(){
         
-        return tempGiftBox.getCost() + 10.00;
+        return tempGiftBox.getCost() + 200.00;
     
     }
 
@@ -44,5 +44,4 @@ public class tshirt extends Gifts{
         }
     }
 
-    
 }

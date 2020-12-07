@@ -11,11 +11,12 @@ import javafx.scene.image.ImageView;
  *
  * @author alisu
  */
-public class Smartphone extends Gifts{
+public class Trishaw extends Gifts{
     
     GiftBoxInterface box;
+    ImageView img;
     
-    public Smartphone(GiftBoxInterface newGiftBox) {
+     public Trishaw(GiftBoxInterface newGiftBox) {
         super(newGiftBox);
         this.box = newGiftBox;
     }
@@ -23,14 +24,14 @@ public class Smartphone extends Gifts{
     @Override
     public String getDescription(){
     
-        return tempGiftBox.getDescription() + ", Smartphone";
+        return tempGiftBox.getDescription() + ", Trishaw";
         
     }
     
     @Override
     public double getCost(){
         
-        return tempGiftBox.getCost() + 200.00;
+        return tempGiftBox.getCost() + 10.00;
     
     }
 
@@ -43,4 +44,5 @@ public class Smartphone extends Gifts{
         }
     }
 
+    
 }

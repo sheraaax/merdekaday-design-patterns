@@ -2,12 +2,12 @@ package xmastreeswing;
 
 import command.RemoteLoader;
 import decorator.AddGift;
-import decorator.Candy;
 import decorator.GiftBox;
 import decorator.GiftBoxInterface;
-import decorator.Smartphone;
 import decorator.Toy;
-import decorator.tshirt;
+import decorator.Trishaw;
+import decorator.Hibiscus;
+import decorator.Klcc;
 import facade.Fireworks;
 import state.*;
 import java.net.URL;
@@ -38,10 +38,10 @@ public class Controller implements Initializable{
     private ImageView lightStar;
 
     @FXML
-    private ImageView bearImage, tshirtImage, smartphoneImage, candyImage;
+    private ImageView bearImage, trishawImage, klccImage, hibiscusImage;
     
     @FXML
-    private RadioButton teddyBear, tshirt, smartphone, candy;
+    private RadioButton teddyBear, beca, klcc, hibiscus;
     
     @FXML
     private Text price;
@@ -92,28 +92,29 @@ public class Controller implements Initializable{
 
             // Decorator Pattern
             case "gifts":
-                AddGift.init(box,price,bearImage,tshirtImage,candyImage,smartphoneImage);
+                AddGift.init(box,bearImage,trishawImage,klccImage,hibiscusImage);
                 break;
         }
     }
     
     @FXML
     public void clearGifts(ActionEvent e){
-        tshirt.setSelected(false);
-        candy.setSelected(false);
-        smartphone.setSelected(false);
+        beca.setSelected(false);
+        klcc.setSelected(false);
         teddyBear.setSelected(false);
-        tshirtImage.setVisible(false);
+        hibiscus.setSelected(false);
+        trishawImage.setVisible(false);
         bearImage.setVisible(false);
-        smartphoneImage.setVisible(false);
-        candyImage.setVisible(false);
-        tshirtImage.yProperty().set(0);
+        klccImage.setVisible(false);
+        hibiscusImage.setVisible(false);
+        trishawImage.yProperty().set(0);
         bearImage.yProperty().set(0);
         bearImage.xProperty().set(0);
-        candyImage.yProperty().set(0);
-        smartphoneImage.yProperty().set(0);
+        klccImage.yProperty().set(0);
+        hibiscusImage.yProperty().set(0);
         box = null;
         box = new GiftBox();
+        System.out.println("Clear Merdeka Decoration Items!");
     }
     
     @FXML
@@ -130,19 +131,19 @@ public class Controller implements Initializable{
                     box.setImage(bearImage);   
                     System.out.println(box.getDescription());
                 break;
-            case "tshirt":
-                    box = new tshirt(box);
-                    box.setImage(tshirtImage);   
+            case "beca":
+                    box = new Trishaw(box);
+                    box.setImage(trishawImage);   
                     System.out.println(box.getDescription());
                 break;
-            case "smartphone":
-                    box = new Smartphone(box);
-                    box.setImage(smartphoneImage);   
+            case "klcc":
+                    box = new Klcc(box);
+                    box.setImage(klccImage);   
                     System.out.println(box.getDescription());
                 break;
-            case "candy":
-                    box = new Candy(box);
-                    box.setImage(candyImage);   
+            case "hibiscus":
+                    box = new Hibiscus(box);
+                    box.setImage(hibiscusImage);
                     System.out.println(box.getDescription());
                 break;
         }

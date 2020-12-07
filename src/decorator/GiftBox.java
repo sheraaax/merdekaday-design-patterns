@@ -22,7 +22,7 @@ public class GiftBox implements GiftBoxInterface{
        
     @Override
     public String getDescription() {
-        return "Christmas Tree Gifts: ";
+        return "Merdeka Decoration Items: ";
     }
 
     @Override
