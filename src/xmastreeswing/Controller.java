@@ -4,7 +4,7 @@ import command.RemoteLoader;
 import decorator.AddGift;
 import decorator.GiftBox;
 import decorator.GiftBoxInterface;
-import decorator.Toy;
+import decorator.KLTower;
 import decorator.Trishaw;
 import decorator.Hibiscus;
 import decorator.Klcc;
@@ -22,9 +22,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import strategy.LightChristmas;
 
+public class Controller implements Initializable {
 
-public class Controller implements Initializable{
-    
     GiftBoxInterface box = new GiftBox();
     Street malaysianPeople;
 
@@ -33,42 +32,41 @@ public class Controller implements Initializable{
 
     @FXML
     private ImageView flagGif;
-    
+
     @FXML
     private ImageView lightStar;
 
     @FXML
-    private ImageView bearImage, trishawImage, klccImage, hibiscusImage;
-    
+    private ImageView klTowerImage, trishawImage, klccImage, hibiscusImage;
+
     @FXML
-    private RadioButton teddyBear, beca, klcc, hibiscus;
-    
+    private RadioButton klTower, beca, klcc, hibiscus;
+
     @FXML
     private Text price;
-    
+
     @FXML
     private Button adder;
-    
+
     @FXML
     private ImageView peopleGif;
     @FXML
     private ImageView fireworks1, fireworks2, fireworks3, fireworks4, fireworks5;
     @FXML
     private Button clear;
-    
-    
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         hideFireworks();
         hidePeople();
     }
-    
+
     @FXML
     public void onClick(MouseEvent mouseEvent) {
         Button temp = (Button) mouseEvent.getSource();
         String id = temp.getId();
 
-        switch ( id ){
+        switch (id) {
             // Command Pattern
             case "flag":
                 RemoteLoader.init(flagGif);
@@ -92,76 +90,74 @@ public class Controller implements Initializable{
 
             // Decorator Pattern
             case "gifts":
-                AddGift.init(box,bearImage,trishawImage,klccImage,hibiscusImage);
+                AddGift.init(box, klTowerImage, trishawImage, klccImage, hibiscusImage);
                 break;
         }
     }
-    
+
     @FXML
-    public void clearGifts(ActionEvent e){
+    public void clearGifts(ActionEvent e) {
         beca.setSelected(false);
         klcc.setSelected(false);
-        teddyBear.setSelected(false);
+        klTower.setSelected(false);
         hibiscus.setSelected(false);
         trishawImage.setVisible(false);
-        bearImage.setVisible(false);
+        klTowerImage.setVisible(false);
         klccImage.setVisible(false);
         hibiscusImage.setVisible(false);
         trishawImage.yProperty().set(0);
-        bearImage.yProperty().set(0);
-        bearImage.xProperty().set(0);
+        klTowerImage.yProperty().set(0);
+        klTowerImage.xProperty().set(0);
         klccImage.yProperty().set(0);
         hibiscusImage.yProperty().set(0);
         box = null;
         box = new GiftBox();
         System.out.println("Clear Merdeka Decoration Items!");
     }
-    
+
     @FXML
-    public void listGifts(ActionEvent e){
+    public void listGifts(ActionEvent e) {
         RadioButton btn = (RadioButton) e.getSource();
         String id = btn.getId();
-        if(btn.isSelected() == false){
-                clearGifts(e);
-                return;
-             }
-        switch(id){
-            case "teddyBear":
-                    box = new Toy(box);
-                    box.setImage(bearImage);   
-                    System.out.println(box.getDescription());
+        if (btn.isSelected() == false) {
+            clearGifts(e);
+            return;
+        }
+        switch (id) {
+            case "klTower":
+                box = new KLTower(box);
+                box.setImage(klTowerImage);
+                System.out.println(box.getDescription());
                 break;
             case "beca":
-                    box = new Trishaw(box);
-                    box.setImage(trishawImage);   
-                    System.out.println(box.getDescription());
+                box = new Trishaw(box);
+                box.setImage(trishawImage);
+                System.out.println(box.getDescription());
                 break;
             case "klcc":
-                    box = new Klcc(box);
-                    box.setImage(klccImage);   
-                    System.out.println(box.getDescription());
+                box = new Klcc(box);
+                box.setImage(klccImage);
+                System.out.println(box.getDescription());
                 break;
             case "hibiscus":
-                    box = new Hibiscus(box);
-                    box.setImage(hibiscusImage);
-                    System.out.println(box.getDescription());
+                box = new Hibiscus(box);
+                box.setImage(hibiscusImage);
+                System.out.println(box.getDescription());
                 break;
         }
     }
 
-    private void hideFireworks() 
-    {
+    private void hideFireworks() {
         fireworks1.setVisible(false);
         fireworks2.setVisible(false);
         fireworks3.setVisible(false);
         // orn4.setVisible(false);
         // orn5.setVisible(false);
     }
-    
-    private void hidePeople(){
+
+    private void hidePeople() {
         peopleGif.setVisible(false);
         malaysianPeople = new Street(peopleGif);
     }
 
-    
 }
