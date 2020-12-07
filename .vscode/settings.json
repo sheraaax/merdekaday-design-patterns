@@ -16,6 +16,14 @@
         "/Users/shahiraizwaniesinan/workspace/VScodeWorkspace/javafx-sdk-11.0.2/lib/javafx-swt.jar",
         "/Users/shahiraizwaniesinan/workspace/VScodeWorkspace/javafx-sdk-11.0.2/lib/javafx.fxml.jar",
         "/Users/shahiraizwaniesinan/workspace/VScodeWorkspace/javafx-sdk-11.0.2/lib/javafx.graphics.jar",
-        "/Users/shahiraizwaniesinan/workspace/VScodeWorkspace/javafx-sdk-11.0.2/lib/javafx.media.jar"
+        "/Users/shahiraizwaniesinan/workspace/VScodeWorkspace/javafx-sdk-11.0.2/lib/javafx.media.jar",
+        "/Users/eileenasoon/Downloads/javafx-sdk-11.0.2/lib/javafx-swt.jar",
+        "/Users/eileenasoon/Downloads/javafx-sdk-11.0.2/lib/javafx.base.jar",
+        "/Users/eileenasoon/Downloads/javafx-sdk-11.0.2/lib/javafx.controls.jar",
+        "/Users/eileenasoon/Downloads/javafx-sdk-11.0.2/lib/javafx.fxml.jar",
+        "/Users/eileenasoon/Downloads/javafx-sdk-11.0.2/lib/javafx.graphics.jar",
+        "/Users/eileenasoon/Downloads/javafx-sdk-11.0.2/lib/javafx.media.jar",
+        "/Users/eileenasoon/Downloads/javafx-sdk-11.0.2/lib/javafx.swing.jar",
+        "/Users/eileenasoon/Downloads/javafx-sdk-11.0.2/lib/javafx.web.jar"
     ]
 }
