@@ -26,7 +26,7 @@ public class NoFlag implements State {
     public void performFlagAction() {
         System.out.println("Flag is taken down!");
         flag_gif.setVisible(false);
-        flag.changeState(flag.waveFlag());
+        flag.changeState(flag.putUpFlag());
     }
     
 }

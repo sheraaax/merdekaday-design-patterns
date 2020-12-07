@@ -12,13 +12,13 @@ import javafx.scene.image.ImageView;
  * @author Amirah Rozey
  */
 
-public class WaveFlag implements State{
+public class PutUpFlag implements State{
     
     ImageView flag_gif;
     
     private final Flag flag;
     
-    public WaveFlag(ImageView flag_gif, Flag flag){
+    public PutUpFlag(ImageView flag_gif, Flag flag){
         this.flag_gif = flag_gif;
         this.flag = flag;
     }
