@@ -3,11 +3,6 @@ package facade;
 
 import javafx.scene.image.ImageView;
 
-/**
- *
- * @author Shahira Izwanie
- */
-
 public class Fireworks
 {
     ImageView fireworks1, fireworks2, fireworks3;

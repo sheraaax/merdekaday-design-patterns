@@ -3,21 +3,16 @@
     -fx-background-size: cover;
 }
 
-/* #land {
-    -fx-background-image: url("land.png");
-    -fx-background-size: cover;
-} */
-
 #panel {
     -fx-height: 72;
     -fx-background-color: #db4949;
 }
 
-#kids,
+#flag,
 #trishaw,
 #fireworks,
 #lights,
-#flag,
+#people,
 #gifts {
     -fx-height: 44;
     -fx-padding: 0 22 0 22;
@@ -26,11 +21,11 @@
     -fx-background-radius: 22;
 }
 
-#kids:pressed,
+#flag:pressed,
 #trishaw:pressed,
 #fireworks:pressed,
 #lights:pressed,
-#flag:pressed,
+#people:pressed,
 #gifts:pressed {
     -fx-background-color: #24211E;
 }

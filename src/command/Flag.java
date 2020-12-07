@@ -2,7 +2,7 @@ package command;
 
 import javafx.scene.image.ImageView;
 
-public class Kids {
+public class Flag {
 
     private static Boolean status = false;
     private static MerdekaMusic music = new MerdekaMusic();
@@ -22,7 +22,7 @@ public class Kids {
     public void on(ImageView imageView) {
         status = true;
         System.out.print("Play music! ");
-        System.out.println("Kids are displayed!");
+        System.out.println("Flag is put up!");
 
         imageView.setVisible(true);
         music.play();
@@ -31,7 +31,7 @@ public class Kids {
     public void off(ImageView imageView) {
         status = false;
         System.out.print("Stop music! ");
-        System.out.println("Kids are hidden!");
+        System.out.println("Flag is taken down!");
 
         imageView.setVisible(false);
         music.stop();

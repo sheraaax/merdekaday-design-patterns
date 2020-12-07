@@ -26,13 +26,13 @@ import strategy.LightChristmas;
 public class Controller implements Initializable{
     
     GiftBoxInterface box = new GiftBox();
-    Flag jalurgemilangFlag;
+    Street malaysianPeople;
 
     @FXML
-    private Button santa, flag, fireworks, lights;
+    private Button santa, people, fireworks, lights;
 
     @FXML
-    private ImageView kidsGif;
+    private ImageView flag_gif;
     
     @FXML
     private ImageView lightStar;
@@ -50,7 +50,7 @@ public class Controller implements Initializable{
     private Button adder;
     
     @FXML
-    private ImageView flag_gif;
+    private ImageView people_gif;
     @FXML
     private ImageView fireworks1, fireworks2, fireworks3, fireworks4, fireworks5;
     @FXML
@@ -60,7 +60,7 @@ public class Controller implements Initializable{
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         hideFireworks();
-        hideFlag();
+        hidePeople();
     }
     
     @FXML
@@ -70,13 +70,13 @@ public class Controller implements Initializable{
 
         switch ( id ){
             // Command Pattern
-            case "kids":
-                RemoteLoader.init(kidsGif);
+            case "flag":
+                RemoteLoader.init(flag_gif);
                 break;
 
             // State Pattern
-            case "flag":
-                jalurgemilangFlag.performFlagAction();
+            case "people":
+                malaysianPeople.performAction();
                 break;
 
             // Façade Pattern
@@ -157,9 +157,9 @@ public class Controller implements Initializable{
         // orn5.setVisible(false);
     }
     
-    private void hideFlag(){
-        flag_gif.setVisible(false);
-        jalurgemilangFlag = new Flag(flag_gif);
+    private void hidePeople(){
+        people_gif.setVisible(false);
+        malaysianPeople = new Street(people_gif);
     }
 
     
