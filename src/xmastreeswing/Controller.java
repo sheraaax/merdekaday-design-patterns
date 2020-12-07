@@ -32,7 +32,7 @@ public class Controller implements Initializable{
     private Button santa, people, fireworks, lights;
 
     @FXML
-    private ImageView flag_gif;
+    private ImageView flagGif;
     
     @FXML
     private ImageView lightStar;
@@ -50,7 +50,7 @@ public class Controller implements Initializable{
     private Button adder;
     
     @FXML
-    private ImageView people_gif;
+    private ImageView peopleGif;
     @FXML
     private ImageView fireworks1, fireworks2, fireworks3, fireworks4, fireworks5;
     @FXML
@@ -71,7 +71,7 @@ public class Controller implements Initializable{
         switch ( id ){
             // Command Pattern
             case "flag":
-                RemoteLoader.init(flag_gif);
+                RemoteLoader.init(flagGif);
                 break;
 
             // State Pattern
@@ -158,8 +158,8 @@ public class Controller implements Initializable{
     }
     
     private void hidePeople(){
-        people_gif.setVisible(false);
-        malaysianPeople = new Street(people_gif);
+        peopleGif.setVisible(false);
+        malaysianPeople = new Street(peopleGif);
     }
 
     

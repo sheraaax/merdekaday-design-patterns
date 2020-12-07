@@ -5,18 +5,18 @@ import javafx.scene.image.ImageView;
 
 public class CrowdedStreet implements State{
     
-    ImageView people_gif;
+    ImageView peopleGif;
     private final Street street;
     
-    public CrowdedStreet(ImageView people_gif, Street street){
-        this.people_gif = people_gif;
+    public CrowdedStreet(ImageView peopleGif, Street street){
+        this.peopleGif = peopleGif;
         this.street = street;
     }
 
     @Override
     public void performAction() {
         System.out.println("There are people on the street!");
-        people_gif.setVisible(true);
+        peopleGif.setVisible(true);
         street.changeState(street.emptyStreet());
     }
     

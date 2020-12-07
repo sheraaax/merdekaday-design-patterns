@@ -5,18 +5,18 @@ import javafx.scene.image.ImageView;
 
 public class EmptyStreet implements State {
     
-    ImageView people_gif;
+    ImageView peopleGif;
     Street street;
     
-    public EmptyStreet(ImageView people_gif, Street street){
-        this.people_gif = people_gif;
+    public EmptyStreet(ImageView peopleGif, Street street){
+        this.peopleGif = peopleGif;
         this.street = street;
     }
 
     @Override
     public void performAction() {
         System.out.println("There are no one on the street!");
-        people_gif.setVisible(false);
+        peopleGif.setVisible(false);
         street.changeState(street.crowdedStreet());
     }
     

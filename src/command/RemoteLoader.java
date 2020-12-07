@@ -4,7 +4,7 @@ import javafx.scene.image.ImageView;
 
 public class RemoteLoader {
 
-    public static void init(ImageView flag_gif) {
+    public static void init(ImageView flagGif) {
 
         RemoteControl remoteCont = new RemoteControl();
         Flag flag = new Flag();
@@ -17,7 +17,7 @@ public class RemoteLoader {
         //     remote.setCommand(flagOn);
 
         remoteCont.setCommand(flag.getStatus() ? flagOff : flagOn);
-        remoteCont.buttonPressed(flag_gif);
+        remoteCont.buttonPressed(flagGif);
     }
 
 }

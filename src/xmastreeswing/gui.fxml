@@ -10,7 +10,7 @@
 
 <AnchorPane id="global" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="920.0" stylesheets="@../res/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xmastreeswing.Controller">
    <children>
-      <ImageView id="people_gif" fx:id="people_gif" fitHeight="330.0" fitWidth="300.0" layoutX="5.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView id="peopleGif" fx:id="peopleGif" fitHeight="330.0" fitWidth="300.0" layoutX="5.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@../res/people.gif" />
          </image>
@@ -25,7 +25,7 @@
             <Image url="@../res/xmastree.png" />
          </image>
       </ImageView> -->
-      <ImageView id="flag_gif" fx:id="flag_gif" fitHeight="268.0" fitWidth="330.0" layoutX="483.0" layoutY="38.0" pickOnBounds="true" visible="false">
+      <ImageView id="flagGif" fx:id="flagGif" fitHeight="268.0" fitWidth="330.0" layoutX="483.0" layoutY="38.0" pickOnBounds="true" visible="false">
          <image>
             <Image url="@../res/flag.gif" />
          </image>
