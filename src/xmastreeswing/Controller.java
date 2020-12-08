@@ -21,6 +21,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import strategy.LightChristmas;
+import template.RedLights;
+import template.BlueLights;
+import template.LightsTemplate;
 
 public class Controller implements Initializable {
 
@@ -42,6 +45,9 @@ public class Controller implements Initializable {
     private ImageView klTowerImage, trishawImage, klccImage, hibiscusImage;
 
     @FXML
+    private ImageView redlights, bluelights;
+
+    @FXML
     private RadioButton klTower, beca, klcc, hibiscus;
 
     @FXML
@@ -57,6 +63,7 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         hideFireworks();
         hidePeople();
+        hideLights();
     }
 
     @FXML
@@ -89,6 +96,13 @@ public class Controller implements Initializable {
             // Decorator Pattern
             case "gifts":
                 AddGift.init(box, klTowerImage, trishawImage, klccImage, hibiscusImage);
+                break;
+
+            case "newlights":
+                LightsTemplate rlights = new RedLights();
+                LightsTemplate blights = new BlueLights();
+                rlights.prepareLights(redlights);
+                blights.prepareLights(bluelights);
                 break;
         }
     }
@@ -149,13 +163,16 @@ public class Controller implements Initializable {
         fireworks1.setVisible(false);
         fireworks2.setVisible(false);
         fireworks3.setVisible(false);
-        // orn4.setVisible(false);
-        // orn5.setVisible(false);
     }
 
     private void hidePeople() {
         peopleGif.setVisible(false);
         malaysianPeople = new Street(peopleGif);
+    }
+
+    private void hideLights() {
+        redlights.setVisible(false);
+        bluelights.setVisible(false);
     }
 
 }
