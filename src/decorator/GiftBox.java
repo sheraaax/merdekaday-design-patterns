@@ -18,8 +18,8 @@ import javax.imageio.ImageIO;
  *
  * @author alisu
  */
-public class GiftBox implements GiftBoxInterface{
-       
+public class GiftBox implements ItemsInterface {
+
     @Override
     public String getDescription() {
         return "Merdeka Decoration Items: ";
@@ -34,5 +34,4 @@ public class GiftBox implements GiftBoxInterface{
     public void setImage(ImageView imageView) {
     }
 
-    
 }

@@ -13,9 +13,9 @@ import javafx.scene.image.ImageView;
  */
 public class KLTower extends Gifts {
 
-    GiftBoxInterface box;
+    ItemsInterface box;
 
-    public KLTower(GiftBoxInterface newGiftBox) {
+    public KLTower(ItemsInterface newGiftBox) {
         super(newGiftBox);
         this.box = newGiftBox;
     }

@@ -3,7 +3,7 @@ package xmastreeswing;
 import command.RemoteLoader;
 import decorator.AddGift;
 import decorator.GiftBox;
-import decorator.GiftBoxInterface;
+import decorator.ItemsInterface;
 import decorator.KLTower;
 import decorator.Trishaw;
 import decorator.Hibiscus;
@@ -24,7 +24,7 @@ import strategy.LightChristmas;
 
 public class Controller implements Initializable {
 
-    GiftBoxInterface box = new GiftBox();
+    ItemsInterface box = new GiftBox();
     Street malaysianPeople;
 
     @FXML
@@ -49,7 +49,7 @@ public class Controller implements Initializable {
 
     @FXML
     private Button adder;
-    
+
     @FXML
     private Button clear;
 
