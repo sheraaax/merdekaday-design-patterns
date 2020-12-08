@@ -71,7 +71,7 @@
             <Image url="@../res/petronas.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="trishawImage" fitHeight="90.0" fitWidth="90.0" layoutX="700.0" layoutY="450.0" visible="false">
+      <ImageView fx:id="trishawImage" fitHeight="75.0" fitWidth="90.0" layoutX="700.0" layoutY="462.0" visible="false">
          <image>
             <Image url="@../res/trishaw.png" />
          </image>

@@ -5,7 +5,9 @@ import javafx.scene.image.ImageView;
 
 public class Fireworks
 {
-    ImageView fireworks1, fireworks2, fireworks3;
+    ImageView fireworks1;
+    ImageView fireworks2;
+    ImageView fireworks3;
     static boolean showfireworks=false;
     
     public Fireworks(ImageView fireworks1, ImageView fireworks2, ImageView fireworks3)

@@ -32,10 +32,12 @@ public class Controller implements Initializable {
 
     @FXML
     private ImageView flagGif;
-
+    @FXML
+    private ImageView peopleGif;
+    @FXML
+    private ImageView fireworks1, fireworks2, fireworks3, fireworks4, fireworks5;
     @FXML
     private ImageView lightStar;
-
     @FXML
     private ImageView klTowerImage, trishawImage, klccImage, hibiscusImage;
 
@@ -47,11 +49,7 @@ public class Controller implements Initializable {
 
     @FXML
     private Button adder;
-
-    @FXML
-    private ImageView peopleGif;
-    @FXML
-    private ImageView fireworks1, fireworks2, fireworks3, fireworks4, fireworks5;
+    
     @FXML
     private Button clear;
 
