@@ -66,7 +66,7 @@
             <Button id="gifts" fx:id="clear" layoutX="838.0" layoutY="8.0" mnemonicParsing="false" onAction="#clearGifts" onMouseClicked="#onClick" prefHeight="44.0" text="Clear" textFill="#ffba5a" />
          </children>
       </AnchorPane>
-      <ImageView fx:id="klccImage" fitHeight="275.0" fitWidth="275.0" layoutX="383.0" layoutY="90.0" visible="false">
+      <ImageView fx:id="klccImage" fitHeight="305.0" fitWidth="180.0" layoutX="403.0" layoutY="73.0" visible="false">
          <image>
             <Image url="@../res/petronas.png" />
          </image>
@@ -76,12 +76,12 @@
             <Image url="@../res/trishaw.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="klTowerImage" fitHeight="305.0" fitWidth="75.0" layoutX="110.0" layoutY="125.0" visible="false">
+      <ImageView fx:id="klTowerImage" fitHeight="305.0" fitWidth="75.0" layoutX="110.0" layoutY="145.0" visible="false">
          <image>
             <Image url="@../res/menara-kuala-lumpur.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="hibiscusImage" fitHeight="150.0" fitWidth="150.0" layoutX="754.0" layoutY="0.0" pickOnBounds="true" visible="false">
+      <ImageView fx:id="hibiscusImage" fitHeight="150.0" fitWidth="150.0" layoutX="754.0" layoutY="22.0" pickOnBounds="true" visible="false">
          <image>
             <Image url="@../res/hibiscus.png" />
          </image>
