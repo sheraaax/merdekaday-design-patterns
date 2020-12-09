@@ -33,27 +33,27 @@
             <Button id="newlights" fx:id="newlights" layoutX="330.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Colourful Lights" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="12.0" />
             <Button id="lights" fx:id="lights" layoutX="718.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Lights" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="718.0" AnchorPane.topAnchor="12.0" />
             <!-- <Button id="gifts" fx:id="adder" layoutX="718.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Add Gifts" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="718.0" AnchorPane.topAnchor="9.0" /> -->
-            <RadioButton fx:id="beca" layoutX="475.0" layoutY="4.0" mnemonicParsing="false" onAction="#listGifts" text="Trishaw" textFill="WHITE">
+            <RadioButton fx:id="beca" layoutX="475.0" layoutY="4.0" mnemonicParsing="false" onAction="#listItems" text="Trishaw" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="klTower" layoutX="590.0" layoutY="4.0" mnemonicParsing="false" onAction="#listGifts" text="KL Tower" textFill="WHITE">
+            <RadioButton fx:id="klTower" layoutX="590.0" layoutY="4.0" mnemonicParsing="false" onAction="#listItems" text="KL Tower" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="hibiscus" layoutX="590.0" layoutY="33.0" mnemonicParsing="false" onAction="#listGifts" text="Hibiscus" textFill="WHITE">
+            <RadioButton fx:id="hibiscus" layoutX="590.0" layoutY="33.0" mnemonicParsing="false" onAction="#listItems" text="Hibiscus" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="klcc" layoutX="475.0" layoutY="33.0" mnemonicParsing="false" onAction="#listGifts" text="KLCC" textFill="WHITE">
+            <RadioButton fx:id="klcc" layoutX="475.0" layoutY="33.0" mnemonicParsing="false" onAction="#listItems" text="KLCC" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </RadioButton>
-            <Button id="gifts" fx:id="clear" layoutX="838.0" layoutY="12.0" mnemonicParsing="false" onAction="#clearGifts" onMouseClicked="#onClick" prefHeight="44.0" text="Clear" textFill="#ffba5a" AnchorPane.bottomAnchor="12.0" AnchorPane.topAnchor="12.0" />
+            <Button id="gifts" fx:id="clear" layoutX="838.0" layoutY="12.0" mnemonicParsing="false" onAction="#clearItems" onMouseClicked="#onClick" prefHeight="44.0" text="Clear" textFill="#ffba5a" AnchorPane.bottomAnchor="12.0" AnchorPane.topAnchor="12.0" />
          </children>
       </AnchorPane>
       <ImageView fx:id="klccImage" fitHeight="285.0" fitWidth="150.0" layoutX="430.0" layoutY="88.0" visible="false">

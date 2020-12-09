@@ -109,7 +109,7 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    public void clearGifts(ActionEvent e) {
+    public void clearItems(ActionEvent e) {
         beca.setSelected(false);
         klcc.setSelected(false);
         klTower.setSelected(false);
@@ -129,11 +129,11 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    public void listGifts(ActionEvent e) {
+    public void listItems(ActionEvent e) {
         RadioButton btn = (RadioButton) e.getSource();
         String id = btn.getId();
         if (btn.isSelected() == false) {
-            clearGifts(e);
+            clearItems(e);
             return;
         }
         switch (id) {
