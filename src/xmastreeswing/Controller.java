@@ -129,6 +129,22 @@ public class Controller implements Initializable {
     }
 
     @FXML
+    public void addAll(ActionEvent e) {
+        flagGif.setVisible(true);
+        peopleGif.setVisible(true);
+        fireworks1.setVisible(true);
+        fireworks2.setVisible(true);
+        fireworks3.setVisible(true);
+        redlights.setVisible(true);
+        bluelights.setVisible(true);
+        trishawImage.setVisible(true);
+        klTowerImage.setVisible(true);
+        klccImage.setVisible(true);
+        hibiscusImage.setVisible(true);
+        System.out.println("Add All Merdeka Decoration!");
+    }
+
+    @FXML
     public void listItems(ActionEvent e) {
         RadioButton btn = (RadioButton) e.getSource();
         String id = btn.getId();
