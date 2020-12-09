@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package decorator;
 
 import javafx.beans.value.ChangeListener;
@@ -15,10 +11,6 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
-/**
- *
- * @author alisu
- */
 public class AddGift {
 
     public static void init(ItemsInterface box, ImageView img1, ImageView img2, ImageView img3, ImageView img4) {

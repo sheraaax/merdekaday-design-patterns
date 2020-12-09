@@ -11,11 +11,11 @@ public class RedLights extends LightsTemplate {
         if(!status) {
             redlights.setVisible(true);
             status = true;
-            System.out.println("Red lights are up !");
+            System.out.println("Red lights are up!");
         } else {
             redlights.setVisible(false);
             status = false;
-            System.out.println("Red lights are down !");
+            System.out.println("Red lights are down!");
         }
     }
 }

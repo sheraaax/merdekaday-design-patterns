@@ -91,26 +91,6 @@
             <Image url="@../res/fireworks3.png" />
          </image>
       </ImageView>
-      <!-- <ImageView fx:id="fireworks2" fitHeight="180.0" fitWidth="180.0" layoutX="260.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../res/fireworks2.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="fireworks3" fitHeight="320.0" fitWidth="270.0" layoutX="505.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../res/fireworks3.png" />
-         </image>
-      </ImageView> -->
-      <!-- <ImageView fx:id="fireworks2" fitHeight="200.0" fitWidth="130.0" layoutX="510.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../res/fireworks2.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="fireworks3" fitHeight="290.0" fitWidth="240.0" layoutX="248.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../res/fireworks3.png" />
-         </image>
-      </ImageView> -->
       <ImageView id="redlights" fx:id="redlights" fitHeight="375.0" fitWidth="380.0" layoutX="558.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="false" rotate="-17">
          <image>
             <Image url="@../res/redlights.png" />

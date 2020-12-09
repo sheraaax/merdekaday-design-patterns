@@ -11,11 +11,11 @@ public class BlueLights extends LightsTemplate {
         if(!status) {
             bluelights.setVisible(true);
             status = true;
-            System.out.println("Blue lights are up !");
+            System.out.println("Blue lights are up!");
         } else {
             bluelights.setVisible(false);
             status = false;
-            System.out.println("Blue lights are down !");
+            System.out.println("Blue lights are down!");
         }
     }
     

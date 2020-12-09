@@ -29,6 +29,7 @@ public class Fireworks
             // orn4.setVisible(false);
             // orn5.setVisible(false);
             showfireworks=false;
+            System.out.println("No fireworks are displayed!");
         }
         else
         {
@@ -38,6 +39,7 @@ public class Fireworks
             // orn4.setVisible(true);
             // orn5.setVisible(true);
             showfireworks=true;
+            System.out.println("All fireworks are displayed!");
         }
     }
     

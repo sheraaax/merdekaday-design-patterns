@@ -31,7 +31,7 @@ public class Controller implements Initializable {
     Street malaysianPeople;
 
     @FXML
-    private Button santa, people, fireworks, lights;
+    private Button flag, people, fireworks, lights;
 
     @FXML
     private ImageView flagGif;
@@ -98,6 +98,7 @@ public class Controller implements Initializable {
                 AddGift.init(box, klTowerImage, trishawImage, klccImage, hibiscusImage);
                 break;
 
+            // Template Method Pattern
             case "newlights":
                 LightsTemplate rlights = new RedLights();
                 LightsTemplate blights = new BlueLights();
