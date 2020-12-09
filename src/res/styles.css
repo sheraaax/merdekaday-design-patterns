@@ -19,7 +19,7 @@
     -fx-padding: 0 22 0 22;
     -fx-text-fill: #fdf25c;
     -fx-background-color: #011792;
-    -fx-background-radius: 22;
+    -fx-background-radius: 5;
 }
 
 #flag:pressed,
@@ -29,5 +29,5 @@
 #newlights:pressed,
 #people:pressed,
 #gifts:pressed {
-    -fx-background-color: #24211E;
+    -fx-background-color: #0e0157;
 }
