@@ -15,17 +15,7 @@
             <Image url="@../res/people.gif" />
          </image>
       </ImageView>
-      <!-- <ImageView fitHeight="151.0" fitWidth="920.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-         <image>
-            <Image url="@../res/land.png" />
-         </image>
-      </ImageView> -->
-      <!-- <ImageView fitHeight="349.0" fitWidth="172.0" layoutX="377.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="376.91644287109375" AnchorPane.rightAnchor="377.58355712890625">
-         <image>
-            <Image url="@../res/xmastree.png" />
-         </image>
-      </ImageView> -->
-      <ImageView id="flagGif" fx:id="flagGif" fitHeight="268.0" fitWidth="330.0" layoutX="483.0" layoutY="38.0" pickOnBounds="true" visible="false">
+      <ImageView id="flagGif" fx:id="flagGif" fitHeight="198.0" fitWidth="260.0" layoutX="502.0" layoutY="91.0" pickOnBounds="true" visible="false">
          <image>
             <Image url="@../res/flag.gif" />
          </image>
@@ -66,7 +56,7 @@
             <Button id="gifts" fx:id="clear" layoutX="838.0" layoutY="8.0" mnemonicParsing="false" onAction="#clearGifts" onMouseClicked="#onClick" prefHeight="44.0" text="Clear" textFill="#ffba5a" />
          </children>
       </AnchorPane>
-      <ImageView fx:id="klccImage" fitHeight="305.0" fitWidth="180.0" layoutX="403.0" layoutY="73.0" visible="false">
+      <ImageView fx:id="klccImage" fitHeight="285.0" fitWidth="150.0" layoutX="430.0" layoutY="88.0" visible="false">
          <image>
             <Image url="@../res/petronas.png" />
          </image>
@@ -91,7 +81,17 @@
             <Image url="@../res/fireworks1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fireworks2" fitHeight="180.0" fitWidth="180.0" layoutX="260.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fireworks2" fitHeight="177.0" fitWidth="140.0" layoutX="513.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/fireworks2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fireworks3" fitHeight="320.0" fitWidth="270.0" layoutX="248.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/fireworks3.png" />
+         </image>
+      </ImageView>
+      <!-- <ImageView fx:id="fireworks2" fitHeight="180.0" fitWidth="180.0" layoutX="260.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../res/fireworks2.png" />
          </image>
@@ -100,7 +100,17 @@
          <image>
             <Image url="@../res/fireworks3.png" />
          </image>
+      </ImageView> -->
+      <!-- <ImageView fx:id="fireworks2" fitHeight="200.0" fitWidth="130.0" layoutX="510.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/fireworks2.png" />
+         </image>
       </ImageView>
+      <ImageView fx:id="fireworks3" fitHeight="290.0" fitWidth="240.0" layoutX="248.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/fireworks3.png" />
+         </image>
+      </ImageView> -->
       <ImageView id="redlights" fx:id="redlights" fitHeight="375.0" fitWidth="380.0" layoutX="558.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="false" rotate="-17">
          <image>
             <Image url="@../res/redlights.png" />
