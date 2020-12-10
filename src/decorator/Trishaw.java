@@ -3,27 +3,19 @@ package decorator;
 
 import javafx.scene.image.ImageView;
 
-public class Trishaw extends Gifts {
+public class Trishaw extends Decorations {
 
-    ItemsInterface box;
-    ImageView img;
+    DecorationInterface background;
 
-    public Trishaw(ItemsInterface newGiftBox) {
-        super(newGiftBox);
-        this.box = newGiftBox;
+    public Trishaw(DecorationInterface newBackground) {
+        super(newBackground);
+        this.background = newBackground;
     }
 
     @Override
     public String getDescription() {
 
-        return tempGiftBox.getDescription() + ", Trishaw";
-
-    }
-
-    @Override
-    public double getCost() {
-
-        return tempGiftBox.getCost() + 10.00;
+        return tempBackground.getDescription() + ", Trishaw";
 
     }
 

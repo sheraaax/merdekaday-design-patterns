@@ -1,9 +1,9 @@
 package xmastreeswing;
 
 import command.RemoteLoader;
-import decorator.AddGift;
-import decorator.GiftBox;
-import decorator.ItemsInterface;
+import decorator.AddDecoration;
+import decorator.Background;
+import decorator.DecorationInterface;
 import decorator.KLTower;
 import decorator.Trishaw;
 import decorator.Hibiscus;
@@ -20,14 +20,13 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
-import strategy.LightChristmas;
 import template.RedLights;
 import template.BlueLights;
 import template.LightsTemplate;
 
 public class Controller implements Initializable {
 
-    ItemsInterface box = new GiftBox();
+    DecorationInterface background = new Background();
     Street malaysianPeople;
 
     @FXML
@@ -88,14 +87,9 @@ public class Controller implements Initializable {
                 fireworks.setFireworks();
                 break;
 
-            // Strategy Pattern
-            case "lights":
-                LightChristmas.init(lightStar);
-                break;
-
             // Decorator Pattern
-            case "gifts":
-                AddGift.init(box, klTowerImage, trishawImage, klccImage, hibiscusImage);
+            case "decorations":
+                AddDecoration.init(background, klTowerImage, trishawImage, klccImage, hibiscusImage);
                 break;
 
             // Template Method Pattern
@@ -123,8 +117,15 @@ public class Controller implements Initializable {
         klTowerImage.xProperty().set(0);
         klccImage.yProperty().set(0);
         hibiscusImage.yProperty().set(0);
-        box = null;
-        box = new GiftBox();
+        background = null;
+        background = new Background();
+        flagGif.setVisible(false);
+        peopleGif.setVisible(false);
+        fireworks1.setVisible(false);
+        fireworks2.setVisible(false);
+        fireworks3.setVisible(false);
+        redlights.setVisible(false);
+        bluelights.setVisible(false);
         System.out.println("Clear Merdeka Decoration Items!");
     }
 
@@ -154,24 +155,24 @@ public class Controller implements Initializable {
         }
         switch (id) {
             case "klTower":
-                box = new KLTower(box);
-                box.setImage(klTowerImage);
-                System.out.println(box.getDescription());
+                background = new KLTower(background);
+                background.setImage(klTowerImage);
+                System.out.println(background.getDescription());
                 break;
             case "beca":
-                box = new Trishaw(box);
-                box.setImage(trishawImage);
-                System.out.println(box.getDescription());
+                background = new Trishaw(background);
+                background.setImage(trishawImage);
+                System.out.println(background.getDescription());
                 break;
             case "klcc":
-                box = new Klcc(box);
-                box.setImage(klccImage);
-                System.out.println(box.getDescription());
+                background = new Klcc(background);
+                background.setImage(klccImage);
+                System.out.println(background.getDescription());
                 break;
             case "hibiscus":
-                box = new Hibiscus(box);
-                box.setImage(hibiscusImage);
-                System.out.println(box.getDescription());
+                background = new Hibiscus(background);
+                background.setImage(hibiscusImage);
+                System.out.println(background.getDescription());
                 break;
         }
     }

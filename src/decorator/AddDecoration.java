@@ -1,19 +1,12 @@
 
 package decorator;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.Toggle;
-import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
-import javafx.scene.text.Text;
 
-public class AddGift {
 
-    public static void init(ItemsInterface box, ImageView img1, ImageView img2, ImageView img3, ImageView img4) {
+public class AddDecoration {
+
+    public static void init(DecorationInterface background, ImageView img1, ImageView img2, ImageView img3, ImageView img4) {
 
         if (img1.isVisible()) {
             img1.yProperty().set(95);

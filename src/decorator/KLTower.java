@@ -3,25 +3,20 @@ package decorator;
 
 import javafx.scene.image.ImageView;
 
-public class KLTower extends Gifts {
+public class KLTower extends Decorations {
 
-    ItemsInterface box;
+    DecorationInterface background;
 
-    public KLTower(ItemsInterface newGiftBox) {
-        super(newGiftBox);
-        this.box = newGiftBox;
+    public KLTower(DecorationInterface newBackground) {
+        super(newBackground);
+        this.background = newBackground;
     }
 
     @Override
     public String getDescription() {
 
-        return tempGiftBox.getDescription() + ", KL Tower";
+        return tempBackground.getDescription() + ", KL Tower";
 
-    }
-
-    @Override
-    public double getCost() {
-        return tempGiftBox.getCost() + 10.00;
     }
 
     @Override

@@ -3,26 +3,19 @@ package decorator;
 
 import javafx.scene.image.ImageView;
 
-public class Klcc extends Gifts {
+public class Klcc extends Decorations {
 
-    ItemsInterface box;
+    DecorationInterface background;
 
-    public Klcc(ItemsInterface newGiftBox) {
-        super(newGiftBox);
-        this.box = newGiftBox;
+    public Klcc(DecorationInterface newBackground) {
+        super(newBackground);
+        this.background = newBackground;
     }
 
     @Override
     public String getDescription() {
 
-        return tempGiftBox.getDescription() + ", KLCC";
-
-    }
-
-    @Override
-    public double getCost() {
-
-        return tempGiftBox.getCost() + 200.00;
+        return tempBackground.getDescription() + ", KLCC";
 
     }
 
