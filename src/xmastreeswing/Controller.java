@@ -37,7 +37,7 @@ public class Controller implements Initializable {
     @FXML
     private ImageView peopleGif;
     @FXML
-    private ImageView fireworks1, fireworks2, fireworks3, fireworks4, fireworks5;
+    private ImageView fireworks1, fireworks2, fireworks3;
     @FXML
     private ImageView lightStar;
     @FXML
