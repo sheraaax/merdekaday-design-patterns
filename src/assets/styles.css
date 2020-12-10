@@ -15,7 +15,7 @@
 #newlights,
 #people,
 #all,
-#gifts {
+#decorations {
     -fx-height: 44;
     -fx-padding: 0 22 0 22;
     -fx-text-fill: #fdf25c;
@@ -30,6 +30,6 @@
 #newlights:pressed,
 #people:pressed,
 #all:pressed,
-#gifts:pressed {
+#decorations:pressed {
     -fx-background-color: #0e0157;
 }
