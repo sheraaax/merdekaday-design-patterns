@@ -8,21 +8,16 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="global" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="920.0" stylesheets="@../res/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xmastreeswing.Controller">
+<AnchorPane id="global" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="920.0" stylesheets="@../assets/styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xmastreeswing.Controller">
    <children>
       <ImageView id="peopleGif" fx:id="peopleGif" fitHeight="330.0" fitWidth="300.0" layoutX="5.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
-            <Image url="@../res/people.gif" />
+            <Image url="@../assets/people.gif" />
          </image>
       </ImageView>
       <ImageView id="flagGif" fx:id="flagGif" fitHeight="198.0" fitWidth="260.0" layoutX="502.0" layoutY="91.0" pickOnBounds="true" visible="false">
          <image>
-            <Image url="@../res/flag.gif" />
-         </image>
-      </ImageView>
-      <ImageView id="lightStar" fx:id="lightStar" fitHeight="375.0" fitWidth="241.0" layoutX="339.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" visible="false">
-         <image>
-            <Image url="@../res/tree-of-light.png" />
+            <Image url="@../assets/flag.gif" />
          </image>
       </ImageView>
       <AnchorPane id="panel" layoutY="393.0" prefHeight="62.0" prefWidth="920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
@@ -32,7 +27,6 @@
             <Button id="fireworks" fx:id="fireworks" layoutX="221.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Fireworks" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="12.0" />
             <Button id="newlights" fx:id="newlights" layoutX="330.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Colourful Lights" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="12.0" />
             <Button id="all" fx:id="all" layoutX="718.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" onAction="#addAll" prefHeight="50.0" text="Add All" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="718.0" AnchorPane.topAnchor="12.0" />
-            <!-- <Button id="gifts" fx:id="adder" layoutX="718.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Add Gifts" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="718.0" AnchorPane.topAnchor="9.0" /> -->
             <RadioButton fx:id="beca" layoutX="475.0" layoutY="4.0" mnemonicParsing="false" onAction="#listItems" text="Trishaw" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
@@ -53,52 +47,52 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </RadioButton>
-            <Button id="gifts" fx:id="clear" layoutX="838.0" layoutY="12.0" mnemonicParsing="false" onAction="#clearItems" onMouseClicked="#onClick" prefHeight="44.0" text="Clear" textFill="#ffba5a" AnchorPane.bottomAnchor="12.0" AnchorPane.topAnchor="12.0" />
+            <Button id="decorations" fx:id="clear" layoutX="820.0" layoutY="12.0" mnemonicParsing="false" onAction="#clearItems" onMouseClicked="#onClick" prefHeight="44.0" text="Clear" textFill="#ffba5a" AnchorPane.bottomAnchor="12.0" AnchorPane.topAnchor="12.0" />
          </children>
       </AnchorPane>
       <ImageView fx:id="klccImage" fitHeight="285.0" fitWidth="150.0" layoutX="430.0" layoutY="88.0" visible="false">
          <image>
-            <Image url="@../res/petronas.png" />
+            <Image url="@../assets/petronas.png" />
          </image>
       </ImageView>
       <ImageView fx:id="trishawImage" fitHeight="75.0" fitWidth="90.0" layoutX="700.0" layoutY="462.0" visible="false">
          <image>
-            <Image url="@../res/trishaw.png" />
+            <Image url="@../assets/trishaw.png" />
          </image>
       </ImageView>
       <ImageView fx:id="klTowerImage" fitHeight="305.0" fitWidth="75.0" layoutX="110.0" layoutY="145.0" visible="false">
          <image>
-            <Image url="@../res/menara-kuala-lumpur.png" />
+            <Image url="@../assets/menara-kuala-lumpur.png" />
          </image>
       </ImageView>
       <ImageView fx:id="hibiscusImage" fitHeight="150.0" fitWidth="150.0" layoutX="754.0" layoutY="22.0" pickOnBounds="true" visible="false">
          <image>
-            <Image url="@../res/hibiscus.png" />
+            <Image url="@../assets/hibiscus.png" />
          </image>
       </ImageView>
       <ImageView fx:id="fireworks1" fitHeight="250.0" fitWidth="250.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../res/fireworks1.png" />
+            <Image url="@../assets/fireworks1.png" />
          </image>
       </ImageView>
       <ImageView fx:id="fireworks2" fitHeight="177.0" fitWidth="140.0" layoutX="513.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../res/fireworks2.png" />
+            <Image url="@../assets/fireworks2.png" />
          </image>
       </ImageView>
       <ImageView fx:id="fireworks3" fitHeight="320.0" fitWidth="270.0" layoutX="248.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../res/fireworks3.png" />
+            <Image url="@../assets/fireworks3.png" />
          </image>
       </ImageView>
       <ImageView id="redlights" fx:id="redlights" fitHeight="375.0" fitWidth="380.0" layoutX="558.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="false" rotate="-17">
          <image>
-            <Image url="@../res/redlights.png" />
+            <Image url="@../assets/redlights.png" />
          </image>
       </ImageView>
       <ImageView id="bluelights" fx:id="bluelights" fitHeight="250.0" fitWidth="350.0" layoutX="573.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true" visible="false" rotate="-9">
          <image>
-            <Image url="@../res/bluelights.png" />
+            <Image url="@../assets/bluelights.png" />
          </image>
       </ImageView>
    </children>
