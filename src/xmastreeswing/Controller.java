@@ -50,12 +50,6 @@ public class Controller implements Initializable {
     private RadioButton klTower, beca, klcc, hibiscus;
 
     @FXML
-    private Text price;
-
-    @FXML
-    private Button adder;
-
-    @FXML
     private Button clear;
 
     @Override
