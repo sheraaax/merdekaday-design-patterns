@@ -9,7 +9,7 @@
             "name": "CodeLens (Launch) - MerdekaDay",
             "request": "launch",
             "vmArgs": "--module-path /Users/eileenasoon/Downloads/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml --add-modules javafx.controls,javafx.media",
-            "mainClass": "xmastreeswing.MerdekaDay",
+            "mainClass": "MerdekaDay",
             "projectName": "merdekaday-design-patterns_779c8df6"
         },
         {
@@ -17,7 +17,7 @@
             "name": "CodeLens (Launch) - MerdekaDay",
             "request": "launch",
             "vmArgs": "--module-path C:/Users/A.Rozey/Downloads/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml --add-modules javafx.controls,javafx.media",
-            "mainClass": "xmastreeswing.MerdekaDay",
+            "mainClass": "MerdekaDay",
             "projectName": "merdekaday-design-patterns_e3055435"
         },
         {
@@ -25,7 +25,7 @@
             "name": "CodeLens (Launch) - MerdekaDay",
             "request": "launch",
             "vmArgs": "--module-path /Users/shahiraizwaniesinan/workspace/VScodeWorkspace/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml --add-modules javafx.controls,javafx.media",
-            "mainClass": "xmastreeswing.MerdekaDay",
+            "mainClass": "MerdekaDay",
             "projectName": "DP-MerdekaDay_550f167b"
         },
         {

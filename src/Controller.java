@@ -1,4 +1,3 @@
-package xmastreeswing;
 
 import command.RemoteLoader;
 import decorator.AddDecoration;
