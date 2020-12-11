@@ -22,32 +22,33 @@
       </ImageView>
       <AnchorPane id="panel" layoutY="393.0" prefHeight="62.0" prefWidth="920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Button id="flag" fx:id="flag" layoutX="30.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Play Music" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="12.0" />
-            <Button id="people" fx:id="people" layoutX="126.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="People" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="126.0" AnchorPane.topAnchor="12.0" />
-            <Button id="fireworks" fx:id="fireworks" layoutX="221.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Fireworks" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="12.0" />
-            <Button id="newlights" fx:id="newlights" layoutX="330.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Colourful Lights" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="12.0" />
-            <Button id="all" fx:id="all" layoutX="718.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" onAction="#addAll" prefHeight="50.0" text="Add All" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="718.0" AnchorPane.topAnchor="12.0" />
-            <RadioButton fx:id="beca" layoutX="475.0" layoutY="4.0" mnemonicParsing="false" onAction="#listItems" text="Trishaw" textFill="WHITE">
+            <RadioButton fx:id="beca" layoutX="30.0" layoutY="4.0" mnemonicParsing="false" onAction="#listItems" text="Trishaw" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="klTower" layoutX="590.0" layoutY="4.0" mnemonicParsing="false" onAction="#listItems" text="KL Tower" textFill="WHITE">
+            <RadioButton fx:id="klTower" layoutX="145.0" layoutY="4.0" mnemonicParsing="false" onAction="#listItems" text="KL Tower" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="hibiscus" layoutX="590.0" layoutY="33.0" mnemonicParsing="false" onAction="#listItems" text="Hibiscus" textFill="WHITE">
+            <RadioButton fx:id="hibiscus" layoutX="145.0" layoutY="33.0" mnemonicParsing="false" onAction="#listItems" text="Hibiscus" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="klcc" layoutX="475.0" layoutY="33.0" mnemonicParsing="false" onAction="#listItems" text="KLCC" textFill="WHITE">
+            <RadioButton fx:id="klcc" layoutX="30.0" layoutY="33.0" mnemonicParsing="false" onAction="#listItems" text="KLCC" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </RadioButton>
+            <Button id="flag" fx:id="flag" layoutX="0.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Play Music" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="12.0" />
+                        <Button id="people" fx:id="people" layoutX="570.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="People" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="376.0" AnchorPane.topAnchor="12.0" />
+            <Button id="fireworks" fx:id="fireworks" layoutX="665.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Fireworks" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="471.0" AnchorPane.topAnchor="12.0" />
+            <Button id="newlights" fx:id="newlights" layoutX="775.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" prefHeight="50.0" text="Colourful Lights" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="580.0" AnchorPane.topAnchor="12.0" />
+            <Button id="all" fx:id="all" layoutX="885.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onClick" onAction="#addAll" prefHeight="50.0" text="Add All" textFill="#fdf25c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="723.0" AnchorPane.topAnchor="12.0" />
             <Button id="decorations" fx:id="clear" layoutX="820.0" layoutY="12.0" mnemonicParsing="false" onAction="#clearItems" onMouseClicked="#onClick" prefHeight="44.0" text="Clear" textFill="#ffba5a" AnchorPane.bottomAnchor="12.0" AnchorPane.topAnchor="12.0" />
+            
          </children>
       </AnchorPane>
       <ImageView fx:id="klccImage" fitHeight="285.0" fitWidth="150.0" layoutX="430.0" layoutY="88.0" visible="false">
