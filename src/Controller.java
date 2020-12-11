@@ -18,7 +18,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.text.Text;
 import template.RedLights;
 import template.BlueLights;
 import template.LightsTemplate;

@@ -10,13 +10,13 @@ public class Flag {
     public void on() {
         status = true;
         
-        music.play();
+        MerdekaMusic.play();
     }
 
     public void off() {
         status = false;
 
-        music.stop();
+        MerdekaMusic.stop();
     }
 
     public void on(ImageView imageView) {
@@ -25,7 +25,7 @@ public class Flag {
         System.out.println("Flag is put up!");
 
         imageView.setVisible(true);
-        music.play();
+        MerdekaMusic.play();
     }
 
     public void off(ImageView imageView) {
@@ -34,7 +34,7 @@ public class Flag {
         System.out.println("Flag is taken down!");
 
         imageView.setVisible(false);
-        music.stop();
+        MerdekaMusic.stop();
     }
 
     public Boolean getStatus() {
